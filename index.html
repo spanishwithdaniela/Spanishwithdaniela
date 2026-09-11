@@ -10,489 +10,268 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Spanish with Daniela Perdomo · Singapore</title>
+<title>Spanish with Daniela | Morning Spanish for expat women &amp; teen tutoring in Singapore</title>
+<meta name="description" content="Small-group Spanish for expat women on weekday mornings, and IGCSE / IB Spanish tutoring for teens. Native speaker from Ecuador, face to face in Singapore.">
+<meta property="og:title" content="Kids at school. Morning free. Spanish with Daniela">
+<meta property="og:description" content="Small-group Spanish for expat women in Singapore, weekday mornings. Native speaker, relaxed vibe, great company.">
+<meta name="theme-color" content="#FFEDB8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --black: #2a1f1a;
-    --white: #fff8f5;
-    --red: #c4736a;
-    --red-dark: #a85a52;
-    --gold: #e8a598;
-    --grey: #f5ede9;
-    --text-muted: #9c7b74;
+    --ink: #2A1838;
+    --ink-soft: #5E4B6B;
+    --boug: #C8286A;
+    --boug-dark: #A51D55;
+    --blush: #FADCE6;
+    --mango: #FFC43D;
+    --morning: #FFEDB8;
+    --leaf: #1E6A50;
+    --paper: #FFFBF5;
+    --hand: 'Caveat', cursive;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; }
-
   body {
-    background: #fff8f5;
-    color: #3d2820;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 300;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
     overflow-x: hidden;
   }
+  img, svg { display: block; max-width: 100%; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 6px; }
+
+  .wrap { width: min(1180px, 100% - 10vw); margin-inline: auto; }
+
+  h1, h2, h3 { font-weight: 800; letter-spacing: -0.025em; line-height: 1.02; }
+  h2 { font-size: clamp(2rem, 4.4vw, 3.3rem); max-width: 16ch; }
+  h3 { font-size: 1.2rem; letter-spacing: -0.01em; line-height: 1.2; }
+
+  /* ── buttons ── */
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    font: inherit; font-weight: 700; font-size: 1rem;
+    text-decoration: none;
+    padding: 15px 26px;
+    border-radius: 999px;
+    border: 2px solid transparent;
+    transition: background .2s, color .2s, border-color .2s, transform .15s;
+  }
+  .btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+  .btn:hover { transform: translateY(-2px); }
+  .btn-main { background: var(--boug); color: var(--paper); }
+  .btn-main:hover { background: var(--boug-dark); }
+  .btn-line { border-color: var(--ink); color: var(--ink); }
+  .btn-line:hover { background: var(--ink); color: var(--paper); }
 
   /* ── HERO ── */
-  .hero {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 60px 6vw 80px;
-    position: relative;
-    overflow: hidden;
+  .hero { background: var(--morning); overflow: hidden; }
+  .nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 22px 0;
   }
+  .logo { font-weight: 800; font-size: 1.15rem; letter-spacing: -0.02em; text-decoration: none; }
+  .logo span { font-family: var(--hand); font-weight: 700; font-size: 1.5rem; color: var(--boug); margin-left: 2px; }
+  .nav .btn { padding: 10px 18px; font-size: .92rem; }
 
-  .hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-      radial-gradient(ellipse 70% 60% at 80% 50%, rgba(196,115,106,0.22) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 40% at 10% 80%, rgba(232,165,152,0.15) 0%, transparent 60%);
-    pointer-events: none;
-  }
-
-  .hero-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.78rem;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #e8a598;
-    margin-bottom: 28px;
-    opacity: 0;
-    animation: fadeUp 0.7s 0.1s forwards;
-  }
-
-  .hero-tag span {
-    width: 28px; height: 1px;
-    background: var(--gold);
-    display: inline-block;
-  }
-
-  h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(3rem, 9vw, 7.5rem);
-    line-height: 0.95;
-    font-weight: 900;
-    max-width: 820px;
-    opacity: 0;
-    animation: fadeUp 0.8s 0.25s forwards;
-  }
-
-  h1 em {
-    font-style: italic;
-    color: var(--red);
-  }
-
-  .hero-sub {
-    margin-top: 32px;
-    font-size: clamp(1rem, 2.2vw, 1.25rem);
-    line-height: 1.6;
-    max-width: 520px;
-    color: #7a5248;
-    font-weight: 400;
-    opacity: 0;
-    animation: fadeUp 0.8s 0.4s forwards;
-  }
-
-  .hero-cta {
-    margin-top: 48px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    opacity: 0;
-    animation: fadeUp 0.8s 0.55s forwards;
-  }
-
-  .btn-primary {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: var(--red);
-    color: var(--white);
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 17px 32px;
-    border-radius: 4px;
-    transition: background 0.2s, transform 0.15s;
-    letter-spacing: 0.01em;
-  }
-
-  .btn-primary:hover {
-    background: var(--red-dark);
-    transform: translateY(-2px);
-  }
-
-  .btn-primary svg { flex-shrink: 0; }
-
-  .btn-secondary {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: rgba(253,240,236,0.7);
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 400;
-    padding: 17px 20px;
-    border-radius: 4px;
-    border: 1px solid rgba(255,255,255,0.15);
-    transition: border-color 0.2s, color 0.2s;
-  }
-
-  .btn-secondary:hover {
-    border-color: rgba(255,255,255,0.4);
-    color: var(--white);
-  }
-
-  .hero-scroll {
-    position: absolute;
-    bottom: 36px;
-    left: 6vw;
-    font-size: 0.72rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: rgba(253,240,236,0.45);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .hero-scroll::after {
-    content: '';
-    width: 40px; height: 1px;
-    background: currentColor;
-    display: inline-block;
-  }
-
-  /* ── TRUST BAR ── */
-  .trust {
-    background: #fde8e3;
-    color: var(--black);
-    padding: 22px 6vw;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px 40px;
-    align-items: center;
-  }
-
-  .trust-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 0.88rem;
-    font-weight: 400;
-    color: #4a3f35;
-  }
-
-  .trust-item .icon {
-    font-size: 1.2rem;
-  }
-
-  /* ── SECTION BASE ── */
-  section { padding: 90px 6vw; }
-
-  .label {
-    font-size: 0.72rem;
-    font-weight: 500;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 18px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .label::before {
-    content: '';
-    width: 20px; height: 1px;
-    background: var(--gold);
-  }
-
-  h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2rem, 4vw, 3.2rem);
-    font-weight: 700;
-    line-height: 1.1;
-    max-width: 700px;
-  }
-
-  /* ── FOR WHOM ── */
-  .for-whom { background: #fdeee8; }
-
-  .cards {
+  .hero-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 2px;
-    margin-top: 50px;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 4vw;
+    align-items: end;
   }
+  .hero-copy { padding: 4vh 0 9vh; }
+  .hero h1 {
+    font-size: clamp(2.9rem, 5.6vw, 5.2rem);
+    line-height: .95;
+    letter-spacing: -0.035em;
+  }
+  .hero h1 .line { display: block; }
+  .hero-sub { margin-top: 26px; font-size: clamp(1.08rem, 1.7vw, 1.28rem); max-width: 36ch; color: var(--ink); }
+  .hero-sub + .hero-sub { margin-top: 10px; color: var(--ink-soft); }
+  .hero-cta { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 12px; }
+  .spots {
+    margin-top: 26px; display: flex; align-items: center; gap: 10px;
+    font-weight: 500; font-size: .95rem;
+  }
+  .spots::before {
+    content: ''; width: 10px; height: 10px; border-radius: 50%;
+    background: var(--boug); box-shadow: 0 0 0 4px rgba(200,40,106,.18);
+  }
+  .hero-switch { margin-top: 14px; font-size: .95rem; color: var(--ink-soft); }
+  .hero-switch a { font-weight: 700; color: var(--ink); text-underline-offset: 3px; }
+  .hero-art svg { width: 100%; height: auto; }
 
-  .card {
-    background: #fbede9;
-    padding: 36px 32px;
+  /* one orchestrated load moment */
+  @keyframes rise { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+  .hero-copy > * { animation: rise .7s both; }
+  .hero-copy > :nth-child(2) { animation-delay: .1s; }
+  .hero-copy > :nth-child(3) { animation-delay: .18s; }
+  .hero-copy > :nth-child(n+4) { animation-delay: .28s; }
+  .hero-art { animation: rise .9s .15s both; }
+  @keyframes steam { 0%,100% { transform: translateY(0); opacity: .45; } 50% { transform: translateY(-5px); opacity: .15; } }
+  .steam { animation: steam 3.2s ease-in-out infinite; }
+
+  /* ── TRUST STRIP ── */
+  .trust { background: var(--ink); color: var(--paper); }
+  .trust ul {
+    list-style: none; display: flex; flex-wrap: wrap; gap: 10px 40px;
+    padding: 18px 0; font-size: .95rem;
+  }
+  .trust li { display: flex; align-items: center; gap: 10px; }
+  .trust li::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--mango); }
+
+  section { padding: clamp(64px, 10vw, 120px) 0; }
+
+  /* ── MORNINGS ── */
+  .mornings-head { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 5vw; align-items: end; }
+  .mornings-head p { font-size: 1.12rem; max-width: 38ch; color: var(--ink-soft); }
+  .mornings-art { display: none; max-width: 520px; margin-top: 40px; }
+
+  .day {
+    list-style: none;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;
+    margin-top: 64px;
     position: relative;
+  }
+  .day::before {
+    content: ''; position: absolute; left: 0; right: 0; top: 11px;
+    border-top: 2px dashed rgba(42,24,56,.25);
+  }
+  .day li { position: relative; padding-top: 44px; }
+  .day li::before {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 24px; height: 24px; border-radius: 50%;
+    background: var(--paper); border: 3px solid var(--boug);
+  }
+  .day li:last-child::before { background: var(--boug); }
+  .day h3 { margin-bottom: 8px; }
+  .day p { color: var(--ink-soft); font-size: .98rem; }
+
+  .facts {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    margin-top: 72px;
+    border-top: 2px solid var(--ink);
+  }
+  .facts div { padding: 22px 20px 0 0; }
+  .facts dt { font-size: .9rem; color: var(--ink-soft); }
+  .facts dd { font-weight: 800; font-size: clamp(1.25rem, 2vw, 1.6rem); letter-spacing: -0.02em; line-height: 1.15; margin-top: 4px; }
+
+  /* ── TEENS ── */
+  .teens { background: var(--leaf); color: var(--paper); }
+  .teens-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5vw; align-items: center; }
+  .teens h2 { max-width: 14ch; }
+  .teens p.lead { margin-top: 22px; font-size: 1.1rem; max-width: 44ch; opacity: .92; }
+  .tags { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+  .tags li { border: 1.5px solid rgba(255,251,245,.5); border-radius: 999px; padding: 6px 14px; font-size: .9rem; font-weight: 500; }
+  .teens blockquote {
+    margin-top: 36px; padding-left: 20px; border-left: 4px solid var(--mango);
+    font-size: 1.08rem; max-width: 46ch;
+  }
+  .teens cite { display: block; margin-top: 10px; font-style: normal; font-size: .9rem; opacity: .75; }
+  .teens .btn { margin-top: 34px; background: var(--mango); color: var(--ink); }
+  .teens .btn:hover { background: var(--paper); }
+
+  /* ── MEET ── */
+  .meet-grid { display: grid; grid-template-columns: minmax(240px, 400px) 1fr; gap: 6vw; align-items: center; }
+  .meet-grid.no-photo { grid-template-columns: 1fr; }
+  .photo {
+    aspect-ratio: 4 / 5;
+    border-radius: 999px 999px 18px 18px; /* arch, echoing the hero window */
     overflow: hidden;
-    transition: background 0.25s;
+    background: var(--morning);
   }
+  .photo img { width: 100%; height: 100%; object-fit: cover; }
+  .meet p { margin-top: 20px; font-size: 1.1rem; max-width: 46ch; }
+  .meet .hand { font-family: var(--hand); font-size: 1.6rem; color: var(--boug); font-weight: 700; margin-top: 18px; }
+  .meet blockquote { margin-top: 36px; padding-top: 24px; border-top: 2px solid var(--blush); max-width: 50ch; color: var(--ink-soft); }
+  .meet cite { display: block; margin-top: 8px; font-style: normal; font-size: .9rem; }
 
-  .card:hover { background: #fde3dc; }
-
-  .card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 3px; height: 0;
-    background: var(--red);
-    transition: height 0.3s;
+  /* ── PRICES (café menu) ── */
+  .prices { background: var(--blush); }
+  .prices-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 32px 5vw; align-items: start; }
+  .prices-note { margin-top: 18px; max-width: 26ch; color: var(--ink-soft); font-size: 1.05rem; }
+  .menu {
+    max-width: 720px;
+    background: var(--paper);
+    border: 2px solid var(--ink);
+    border-radius: 18px;
+    padding: clamp(24px, 4vw, 44px);
   }
+  .menu-row { display: flex; align-items: baseline; gap: 12px; padding: 14px 0; }
+  .menu-row + .menu-row { border-top: 1px solid rgba(42,24,56,.1); }
+  .menu-name { font-weight: 700; font-size: 1.1rem; }
+  .menu-name small { display: block; font-weight: 400; font-size: .9rem; color: var(--ink-soft); }
+  .menu-dots { flex: 1; border-bottom: 2px dotted rgba(42,24,56,.3); transform: translateY(-6px); min-width: 20px; }
+  .menu-price { font-weight: 800; font-size: 1.15rem; white-space: nowrap; text-align: right; }
+  .menu-price small { display: block; font-weight: 400; font-size: .82rem; color: var(--ink-soft); }
+  .menu-row.star .menu-name, .menu-row.star .menu-price { color: var(--boug); }
 
-  .card:hover::before { height: 100%; }
+  /* ── CTA ── */
+  .cta { background: var(--boug); color: var(--paper); }
+  .cta h2 { max-width: 13ch; font-size: clamp(2.4rem, 6vw, 4.6rem); }
+  .cta p { margin-top: 20px; font-size: 1.15rem; max-width: 40ch; }
+  .cta .hero-cta .btn-main { background: var(--paper); color: var(--boug); }
+  .cta .hero-cta .btn-main:hover { background: var(--mango); color: var(--ink); }
+  .cta .btn-line { border-color: var(--paper); color: var(--paper); }
+  .cta .btn-line:hover { background: var(--paper); color: var(--boug); }
 
-  .card-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 3.5rem;
-    font-weight: 900;
-    color: rgba(196,115,106,0.18);
-    line-height: 1;
-    margin-bottom: 16px;
-    letter-spacing: -0.03em;
-  }
+  footer { background: var(--ink); color: rgba(255,251,245,.6); font-size: .88rem; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: space-between; padding: 26px 0; }
+  footer a { text-decoration: none; }
+  footer a:hover { color: var(--paper); }
 
-  .card h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.35rem;
-    font-weight: 700;
-    margin-bottom: 12px;
-    line-height: 1.2;
-    color: #2a1f1a;
-  }
-
-  .card p {
-    font-size: 0.92rem;
-    line-height: 1.65;
-    color: #7a5a54;
-  }
-
-  /* ── WHY ME ── */
-  .why { background: #fff8f5; color: var(--black); }
-
-  .why-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px 80px;
-    margin-top: 50px;
-    max-width: 820px;
-  }
-
-  @media (max-width: 600px) {
-    .why-grid { grid-template-columns: 1fr; gap: 36px; }
-  }
-
-  .why-item h4 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.15rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .why-item h4 .dot {
-    width: 8px; height: 8px;
-    background: var(--red);
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
-
-  .why-item p {
-    font-size: 0.92rem;
-    line-height: 1.65;
-    color: #7a5a54;
-    padding-left: 20px;
-  }
-
-  /* ── WHAT ── */
-  .what {
-    background: var(--red);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .what::before {
-    content: 'ESPAÑOL';
-    position: absolute;
-    right: -2%;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(6rem, 18vw, 18rem);
-    font-weight: 900;
-    color: rgba(255,255,255,0.15);
-    white-space: nowrap;
-    pointer-events: none;
-    line-height: 1;
-  }
-
-  .what h2 { color: var(--white); }
-  .what .label { color: rgba(255,255,255,0.7); }
-  .what .label::before { background: rgba(255,255,255,0.7); }
-
-  .offers {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    margin-top: 40px;
-  }
-
-  .offer-pill {
-    background: rgba(0,0,0,0.2);
-    border: 1px solid rgba(255,255,255,0.25);
-    color: var(--white);
-    padding: 14px 22px;
-    border-radius: 3px;
-    font-size: 0.95rem;
-    font-weight: 400;
-  }
-
-  .offer-pill strong { font-weight: 500; display: block; margin-bottom: 3px; }
-  .offer-pill span { font-size: 0.78rem; opacity: 0.75; }
-
-  /* ── TESTIMONIAL ── */
-  .testi { background: #fdf0ec; color: var(--black); }
-
-  blockquote {
-    color: #2a1f1a;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(1.4rem, 3.5vw, 2.4rem);
-    font-style: italic;
-    font-weight: 700;
-    line-height: 1.35;
-    max-width: 780px;
-    margin-top: 40px;
-    position: relative;
-    padding-left: 32px;
-  }
-
-  blockquote::before {
-    content: '"';
-    position: absolute;
-    left: 0; top: -10px;
-    font-size: 5rem;
-    color: var(--red);
-    line-height: 1;
-    font-style: normal;
-  }
-
-  .quote-attr {
-    margin-top: 24px;
-    padding-left: 32px;
-    font-size: 0.88rem;
-    color: #9c7b74;
-  }
-
-  /* ── CTA SECTION ── */
-  .cta-section {
-    background: var(--white);
-    color: var(--black);
-    text-align: center;
-  }
-
-  .cta-section h2 {
-    color: var(--black);
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .cta-section .label { justify-content: center; color: #c4736a; }
-  .cta-section .label::before { background: var(--red); }
-
-  .cta-section p {
-    margin: 20px auto 40px;
-    max-width: 480px;
-    font-size: 1rem;
-    color: #6a5f53;
-    line-height: 1.65;
-  }
-
-  .cta-section .btn-primary {
-    font-size: 1.05rem;
-    padding: 20px 40px;
-    border-radius: 4px;
-  }
-
-  .cta-note {
-    margin-top: 18px;
-    font-size: 0.8rem;
-    color: #9a8d7a;
-  }
-
-  /* ── FOOTER ── */
-  footer {
-    background: #2a1f1a;
-    padding: 30px 6vw;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.8rem;
-    color: rgba(253,250,245,0.3);
-    border-top: 1px solid rgba(255,255,255,0.07);
-  }
-
-  footer a { color: inherit; text-decoration: none; }
-  footer a:hover { color: var(--white); }
-
-  /* ── ANIMATIONS ── */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(24px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-
-  .reveal {
-    opacity: 0;
-    transform: translateY(28px);
-    transition: opacity 0.7s, transform 0.7s;
-  }
-
-  .reveal.visible {
-    opacity: 1;
-    transform: none;
-  }
-
-  /* ── WHATSAPP FLOAT ── */
+  /* ── WhatsApp float ── */
   .wa-float {
-    position: fixed;
-    bottom: 28px;
-    right: 28px;
-    z-index: 999;
-    background: #25d366;
-    color: #fff;
-    border-radius: 50%;
-    width: 58px; height: 58px;
-    display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.35);
-    text-decoration: none;
-    transition: transform 0.2s;
+    position: fixed; bottom: 22px; right: 22px; z-index: 50;
+    width: 58px; height: 58px; border-radius: 50%;
+    background: #25D366; display: grid; place-items: center;
+    box-shadow: 0 6px 22px rgba(42,24,56,.3);
+    transition: transform .2s;
   }
+  .wa-float:hover { transform: scale(1.07); }
+  .wa-float svg { width: 28px; height: 28px; }
 
-  .wa-float:hover { transform: scale(1.08); }
+  /* ── variants: default = mornings; ?for=teens puts teens first ── */
+  main { display: flex; flex-direction: column; }
+  .v-teens { display: none; }
+  body.teens-first .v-moms { display: none; }
+  body.teens-first .v-teens { display: block; }
+  body.teens-first .hero-grid.v-teens { display: grid; }
+  body.teens-first #teens { order: -1; }
+  body.teens-first .hero, body.teens-first .trust { order: -2; }
+  body.teens-first #teens .teens-art { display: none; }
+  body.teens-first #teens .teens-grid { grid-template-columns: 1fr; }
+  body.teens-first .mornings-art { display: block; }
 
-  @media (max-width: 640px) {
-    h1 { font-size: clamp(2.6rem, 12vw, 4rem); }
-    .hero { padding: 50px 5vw 80px; }
-    section { padding: 60px 5vw; }
-    .cards { grid-template-columns: 1fr; }
+  /* ── responsive ── */
+  @media (max-width: 900px) {
+    .hero-grid, .teens-grid, .mornings-head, .meet-grid, .prices-grid { grid-template-columns: 1fr; }
+    .hero-copy { padding: 3vh 0 0; }
+    .hero-art { max-width: 560px; margin: 0 auto; }
+    .day { grid-template-columns: 1fr 1fr; row-gap: 40px; }
+    .day::before { display: none; }
+    .facts { grid-template-columns: 1fr 1fr; }
+    .facts div { padding-bottom: 18px; }
+    .photo { max-width: 340px; }
+  }
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    .nav .btn span { display: none; }
+    .nav .btn { padding: 10px; }
+    .day { grid-template-columns: 1fr; }
+    .hero-cta .btn { width: 100%; justify-content: center; }
+    .menu-dots { display: none; }
+    .menu-row { justify-content: space-between; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    html { scroll-behavior: auto; }
   }
 </style>
 <!-- Meta Pixel Code -->
@@ -512,165 +291,402 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1374311260700500&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<script>
+  // Variant switch: spanishwithdaniela.co/?for=teens shows the teen version first (use this URL in teen-parent ads)
+  if (new URLSearchParams(location.search).get('for') === 'teens') document.documentElement.classList.add('teens-first-pending');
+  // Contact tracking; the label tells you in Meta Events Manager which button was used
+  function track(label) { try { fbq('track', 'Contact', { content_name: label }); } catch (e) {} }
+</script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZQLLNDZ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<!-- FLOATING WHATSAPP -->
-<a class="wa-float" href="https://wa.me/6587889205?text=Hi!%20I%27m%20interested%20in%20Spanish%20lessons." onclick="fbq('track', 'Contact')" target="_blank" aria-label="WhatsApp">
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+<script>if (document.documentElement.classList.contains('teens-first-pending')) document.body.classList.add('teens-first');</script>
+
+<!-- icons + illustrations (defined once, reused below) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/></g><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></symbol>
+</svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="art-group" viewBox="0 0 560 520">
+<path d="M62 520 V236 A218 218 0 0 1 498 236 V520 Z" fill="#FFF8E3"/>
+<circle cx="392" cy="128" r="44" fill="#FFC43D"/>
+<path d="M280 20 V330 M62 236 H498" stroke="#F4DB94" stroke-width="7"/>
+<path d="M560 40 C500 50 470 80 440 70 C420 64 400 76 388 60" stroke="#1E6A50" stroke-width="4" fill="none"/>
+<path d="M548 22 L559 42 L537 42 Z" fill="#C8286A" transform="rotate(-10 548 34)"/>
+<circle cx="548" cy="35" r="2.5" fill="#FFFBF5"/>
+<path d="M528 40 L539 60 L517 60 Z" fill="#C8286A" transform="rotate(-2 528 52)"/>
+<circle cx="528" cy="53" r="2.5" fill="#FFFBF5"/>
+<path d="M506 32 L517 52 L495 52 Z" fill="#C8286A" transform="rotate(-27 506 44)"/>
+<circle cx="506" cy="45" r="2.5" fill="#FFFBF5"/>
+<path d="M484 54 L495 74 L473 74 Z" fill="#C8286A" transform="rotate(10 484 66)"/>
+<circle cx="484" cy="67" r="2.5" fill="#FFFBF5"/>
+<path d="M462 46 L473 66 L451 66 Z" fill="#C8286A" transform="rotate(21 462 58)"/>
+<circle cx="462" cy="59" r="2.5" fill="#FFFBF5"/>
+<path d="M444 66 L455 86 L433 86 Z" fill="#C8286A" transform="rotate(-21 444 78)"/>
+<circle cx="444" cy="79" r="2.5" fill="#FFFBF5"/>
+<path d="M420 50 L431 70 L409 70 Z" fill="#C8286A" transform="rotate(-29 420 62)"/>
+<circle cx="420" cy="63" r="2.5" fill="#FFFBF5"/>
+<path d="M398 58 L409 78 L387 78 Z" fill="#C8286A" transform="rotate(-32 398 70)"/>
+<circle cx="398" cy="71" r="2.5" fill="#FFFBF5"/>
+<path d="M540 58 L551 78 L529 78 Z" fill="#C8286A" transform="rotate(-38 540 70)"/>
+<circle cx="540" cy="71" r="2.5" fill="#FFFBF5"/>
+<path d="M470 74 L481 94 L459 94 Z" fill="#C8286A" transform="rotate(11 470 86)"/>
+<circle cx="470" cy="87" r="2.5" fill="#FFFBF5"/>
+<path d="M515 66 L526 86 L504 86 Z" fill="#C8286A" transform="rotate(30 515 78)"/>
+<circle cx="515" cy="79" r="2.5" fill="#FFFBF5"/>
+<g transform="translate(70 330) rotate(-70) scale(1.0)"><path d="M0 0 C20 -46 96 -50 118 0 C96 44 20 42 0 0 Z" fill="#1E6A50"/><path d="M6 0 H110 M40 0 l14 -18 M40 0 l14 18 M70 0 l12 -16 M70 0 l12 16" stroke="#FFFBF5" stroke-width="3" opacity=".35" fill="none" stroke-linecap="round"/></g>
+<g transform="translate(64 360) rotate(-120) scale(0.9)"><path d="M0 0 C20 -46 96 -50 118 0 C96 44 20 42 0 0 Z" fill="#3A9A73"/><path d="M6 0 H110 M40 0 l14 -18 M40 0 l14 18 M70 0 l12 -16 M70 0 l12 16" stroke="#FFFBF5" stroke-width="3" opacity=".35" fill="none" stroke-linecap="round"/></g>
+<g transform="translate(72 352) rotate(-30) scale(0.85)"><path d="M0 0 C20 -46 96 -50 118 0 C96 44 20 42 0 0 Z" fill="#3A9A73"/><path d="M6 0 H110 M40 0 l14 -18 M40 0 l14 18 M70 0 l12 -16 M70 0 l12 16" stroke="#FFFBF5" stroke-width="3" opacity=".35" fill="none" stroke-linecap="round"/></g>
+<g transform="translate(470 360) rotate(-95) scale(0.8)"><path d="M0 0 C20 -46 96 -50 118 0 C96 44 20 42 0 0 Z" fill="#1E6A50"/><path d="M6 0 H110 M40 0 l14 -18 M40 0 l14 18 M70 0 l12 -16 M70 0 l12 16" stroke="#FFFBF5" stroke-width="3" opacity=".35" fill="none" stroke-linecap="round"/></g>
+<g transform="translate(478 372) rotate(-60) scale(0.7)"><path d="M0 0 C20 -46 96 -50 118 0 C96 44 20 42 0 0 Z" fill="#3A9A73"/><path d="M6 0 H110 M40 0 l14 -18 M40 0 l14 18 M70 0 l12 -16 M70 0 l12 16" stroke="#FFFBF5" stroke-width="3" opacity=".35" fill="none" stroke-linecap="round"/></g>
+<g transform="rotate(6 128 308)">
+<path d="M90 266 C87 218 169 218 166 266 C171 298 175 330 161 342 L95 342 C81 330 85 298 90 266 Z" fill="#E0B06A"/>
+<rect x="118" y="290" width="20" height="40" fill="#d8b495"/>
+<path d="M70 440 V360 Q70 326 102 322 H154 Q186 326 186 360 V440 Z" fill="#7BB8D9"/>
+<path d="M113 321.5 Q128 341 143 321.5 Z" fill="#d8b495"/>
+<ellipse cx="128" cy="268" rx="29" ry="34" fill="#F1C8A6"/>
+<ellipse cx="100" cy="272" rx="5" ry="8" fill="#e0ba9a"/>
+<ellipse cx="156" cy="272" rx="5" ry="8" fill="#e0ba9a"/>
+<path d="M97 272 C95 224 161 224 159 272 C151 254 134 250 124 244 C118 256 103 260 97 272 Z" fill="#E0B06A"/>
+<path d="M111.5 270 Q117 264 122.5 270" stroke="#2A1838" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+<path d="M133.5 270 Q139 264 144.5 270" stroke="#2A1838" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+<ellipse cx="111" cy="280" rx="6" ry="3.5" fill="#C8286A" opacity=".22"/>
+<ellipse cx="145" cy="280" rx="6" ry="3.5" fill="#C8286A" opacity=".22"/>
+<path d="M120 283 Q128 290 136 283" stroke="#2A1838" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+</g>
+<g transform="rotate(0 228 284)">
+<circle cx="196.1" cy="250.3" r="17" fill="#231417"/>
+<circle cx="194.0" cy="236.7" r="17" fill="#231417"/>
+<circle cx="196.9" cy="223.4" r="17" fill="#231417"/>
+<circle cx="204.4" cy="212.1" r="17" fill="#231417"/>
+<circle cx="215.3" cy="204.6" r="17" fill="#231417"/>
+<circle cx="228.0" cy="202.0" r="17" fill="#231417"/>
+<circle cx="240.7" cy="204.6" r="17" fill="#231417"/>
+<circle cx="251.6" cy="212.1" r="17" fill="#231417"/>
+<circle cx="259.1" cy="223.4" r="17" fill="#231417"/>
+<circle cx="262.0" cy="236.7" r="17" fill="#231417"/>
+<circle cx="259.9" cy="250.3" r="17" fill="#231417"/>
+<ellipse cx="228" cy="232" rx="40" ry="36" fill="#231417"/>
+<rect x="218" y="266" width="20" height="40" fill="#603822"/>
+<path d="M170 440 V336 Q170 302 202 298 H254 Q286 302 286 336 V440 Z" fill="#C8286A"/>
+<path d="M213 297.5 Q228 317 243 297.5 Z" fill="#603822"/>
+<ellipse cx="228" cy="244" rx="29" ry="34" fill="#6B3F26"/>
+<ellipse cx="200" cy="248" rx="5" ry="8" fill="#633a23"/>
+<ellipse cx="256" cy="248" rx="5" ry="8" fill="#633a23"/>
+<path d="M211.5 246 Q217 240 222.5 246" stroke="#2A1838" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+<path d="M233.5 246 Q239 240 244.5 246" stroke="#2A1838" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+<ellipse cx="211" cy="256" rx="6" ry="3.5" fill="#C8286A" opacity=".22"/>
+<ellipse cx="245" cy="256" rx="6" ry="3.5" fill="#C8286A" opacity=".22"/>
+<path d="M219 258 Q228 272 237 258 Z" fill="#2A1838"/>
+</g>
+<g transform="rotate(0 334 290)">
+<path d="M298 280 V246 C298 202 370 202 370 246 V280 Q370 286 363 286 H305 Q298 286 298 280 Z" fill="#1C1418"/>
+<rect x="324" y="272" width="20" height="40" fill="#dbbda2"/>
+<path d="M276 440 V342 Q276 308 308 304 H360 Q392 308 392 342 V440 Z" fill="#3A9A73"/>
+<path d="M319 303.5 Q334 323 349 303.5 Z" fill="#dbbda2"/>
+<ellipse cx="334" cy="250" rx="29" ry="34" fill="#F4D2B5"/>
+<ellipse cx="306" cy="254" rx="5" ry="8" fill="#e2c3a8"/>
+<ellipse cx="362" cy="254" rx="5" ry="8" fill="#e2c3a8"/>
+<path d="M302 258 C301 206 367 206 366 258 L360 238 Q334 233 308 238 Z" fill="#1C1418"/>
+<path d="M317.5 252 Q323 246 328.5 252" stroke="#2A1838" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+<path d="M339.5 252 Q345 246 350.5 252" stroke="#2A1838" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+<ellipse cx="317" cy="262" rx="6" ry="3.5" fill="#C8286A" opacity=".22"/>
+<ellipse cx="351" cy="262" rx="6" ry="3.5" fill="#C8286A" opacity=".22"/>
+<path d="M326 265 Q334 272 342 265" stroke="#2A1838" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+</g>
+<g transform="rotate(-6 436 310)">
+<circle cx="440" cy="228" r="17" fill="#3A2218"/>
+<rect x="426" y="292" width="20" height="40" fill="#a66c44"/>
+<path d="M378 440 V362 Q378 328 410 324 H462 Q494 328 494 362 V440 Z" fill="#FFC43D"/>
+<path d="M421 323.5 Q436 343 451 323.5 Z" fill="#a66c44"/>
+<ellipse cx="436" cy="270" rx="29" ry="34" fill="#B9784C"/>
+<ellipse cx="408" cy="274" rx="5" ry="8" fill="#ac6f46"/>
+<ellipse cx="464" cy="274" rx="5" ry="8" fill="#ac6f46"/>
+<path d="M405 274 C403 226 469 226 467 274 C459 256 442 252 432 246 C426 258 411 262 405 274 Z" fill="#3A2218"/>
+<path d="M419.5 272 Q425 266 430.5 272" stroke="#2A1838" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+<path d="M441.5 272 Q447 266 452.5 272" stroke="#2A1838" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+<ellipse cx="419" cy="282" rx="6" ry="3.5" fill="#C8286A" opacity=".22"/>
+<ellipse cx="453" cy="282" rx="6" ry="3.5" fill="#C8286A" opacity=".22"/>
+<path d="M428 285 Q436 292 444 285" stroke="#2A1838" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+</g>
+<rect x="20" y="420" width="520" height="100" fill="#1E6A50"/>
+<ellipse cx="280" cy="420" rx="262" ry="40" fill="#D6EFE2" stroke="#1E6A50" stroke-width="3"/>
+<path d="M82 412 L108 422" stroke="#6ca1be" stroke-width="22" stroke-linecap="round"/><ellipse cx="110" cy="424" rx="11" ry="8" fill="#F1C8A6"/><path d="M174 412 L148 422" stroke="#6ca1be" stroke-width="22" stroke-linecap="round"/><ellipse cx="146" cy="424" rx="11" ry="8" fill="#F1C8A6"/>
+<path d="M182 408 L208 418" stroke="#b0235d" stroke-width="22" stroke-linecap="round"/><ellipse cx="210" cy="420" rx="11" ry="8" fill="#6B3F26"/><path d="M274 408 L248 418" stroke="#b0235d" stroke-width="22" stroke-linecap="round"/><ellipse cx="246" cy="420" rx="11" ry="8" fill="#6B3F26"/>
+<path d="M288 408 L314 418" stroke="#338765" stroke-width="22" stroke-linecap="round"/><ellipse cx="316" cy="420" rx="11" ry="8" fill="#F4D2B5"/>
+<path d="M390 412 L416 422" stroke="#e0ac35" stroke-width="22" stroke-linecap="round"/><ellipse cx="418" cy="424" rx="11" ry="8" fill="#B9784C"/><path d="M482 412 L456 422" stroke="#e0ac35" stroke-width="22" stroke-linecap="round"/><ellipse cx="454" cy="424" rx="11" ry="8" fill="#B9784C"/>
+<ellipse cx="128" cy="428" rx="24" ry="6" fill="#FFFBF5" stroke="#2A1838" stroke-width="2"/><path d="M141 406 q13 0 13 10 q0 10 -13 10" fill="none" stroke="#2A1838" stroke-width="3"/><path d="M113 398 H143 V420 Q143 428 135 428 H121 Q113 428 113 420 Z" fill="#FFFBF5" stroke="#2A1838" stroke-width="2"/><g class="steam" stroke="#2A1838" stroke-width="2" fill="none" stroke-linecap="round" opacity=".45"><path d="M123 390 q-6 -8 0 -16 q6 -8 0 -16"/><path d="M134 388 q-6 -8 0 -16 q6 -8 0 -16"/></g>
+<ellipse cx="228" cy="428" rx="24" ry="6" fill="#FFFBF5" stroke="#2A1838" stroke-width="2"/><path d="M241 406 q13 0 13 10 q0 10 -13 10" fill="none" stroke="#2A1838" stroke-width="3"/><path d="M213 398 H243 V420 Q243 428 235 428 H221 Q213 428 213 420 Z" fill="#FFC43D" stroke="#2A1838" stroke-width="2"/>
+<ellipse cx="436" cy="428" rx="24" ry="6" fill="#FFFBF5" stroke="#2A1838" stroke-width="2"/><path d="M449 406 q13 0 13 10 q0 10 -13 10" fill="none" stroke="#2A1838" stroke-width="3"/><path d="M421 398 H451 V420 Q451 428 443 428 H429 Q421 428 421 420 Z" fill="#C8286A" stroke="#2A1838" stroke-width="2"/><g class="steam" stroke="#2A1838" stroke-width="2" fill="none" stroke-linecap="round" opacity=".45"><path d="M431 390 q-6 -8 0 -16 q6 -8 0 -16"/><path d="M442 388 q-6 -8 0 -16 q6 -8 0 -16"/></g>
+<g transform="translate(26 16) rotate(-6 330 418)"><rect x="286" y="398" width="90" height="42" rx="3" fill="#FFFBF5" stroke="#2A1838" stroke-width="2"/><path d="M331 398 V440" stroke="#2A1838" stroke-width="1.5"/><text x="292" y="416" font-family="Caveat, cursive" font-size="14" font-weight="700" fill="#C8286A">¡Hola!</text><path d="M293 424 H322 M293 432 H318 M338 410 H368 M338 418 H364 M338 426 H370 M338 434 H360" stroke="#2A1838" stroke-width="1.4" opacity=".5"/></g>
+<g><path d="M44 110 H186 Q200 110 200 124 V144 Q200 158 186 158 H66 L52 174 L54 158 H44 Q30 158 30 144 V124 Q30 110 44 110 Z" fill="#FFFBF5" stroke="#2A1838" stroke-width="2.2"/><text x="115.0" y="142" text-anchor="middle" font-family="Caveat, cursive" font-size="25" font-weight="700" fill="#2A1838">¿Otro cafecito?</text></g>
+<g><path d="M344 148 H466 Q480 148 480 162 V182 Q480 196 466 196 H464 L450 212 L452 196 H344 Q330 196 330 182 V162 Q330 148 344 148 Z" fill="#FFFBF5" stroke="#2A1838" stroke-width="2.2"/><text x="405.0" y="180" text-anchor="middle" font-family="Caveat, cursive" font-size="25" font-weight="700" fill="#2A1838">¡Me encanta!</text></g>
+</symbol>
+<symbol id="art-teens" viewBox="0 0 560 460">
+<rect x="40" y="30" width="480" height="270" rx="10" fill="#FFFBF5" stroke="#2A1838" stroke-width="3"/>
+<rect x="40" y="290" width="480" height="12" rx="4" fill="#CFC6D6"/>
+<text x="70" y="82" font-family="Caveat, cursive" font-size="30" font-weight="700" fill="#2A1838">hablar</text>
+<text x="70" y="116" font-family="Caveat, cursive" font-size="24" fill="#2A1838" opacity=".75">hablo, hablas, habla</text>
+<text x="70" y="148" font-family="Caveat, cursive" font-size="24" fill="#2A1838" opacity=".75">hablamos, habláis, hablan</text>
+<path d="M70 158 Q170 168 290 156" stroke="#C8286A" stroke-width="3" fill="none" stroke-linecap="round"/>
+<g transform="rotate(7 420 120)"><rect x="370" y="56" width="104" height="128" rx="3" fill="#fff" stroke="#2A1838" stroke-width="2"/><circle cx="422" cy="56" r="7" fill="#C8286A"/><path d="M384 128 H460 M384 142 H452 M384 156 H458 M384 170 H440" stroke="#2A1838" stroke-width="1.6" opacity=".4"/><circle cx="422" cy="98" r="24" fill="none" stroke="#C8286A" stroke-width="3.5"/><text x="422" y="110" text-anchor="middle" font-family="Caveat, cursive" font-size="36" font-weight="700" fill="#C8286A">7</text></g>
+<g transform="rotate(0 190 290)">
+<rect x="180" y="272" width="20" height="40" fill="#d1a27f"/>
+<path d="M132 440 V342 Q132 308 164 304 H216 Q248 308 248 342 V440 Z" fill="#5B7FD6"/>
+<path d="M175 303.5 Q190 323 205 303.5 Z" fill="#d1a27f"/>
+<ellipse cx="190" cy="250" rx="29" ry="34" fill="#E9B48E"/>
+<ellipse cx="162" cy="254" rx="5" ry="8" fill="#d8a784"/>
+<ellipse cx="218" cy="254" rx="5" ry="8" fill="#d8a784"/>
+<path d="M159 252 C155 204 225 204 221 252 C217 238 211 234 207 232 C194 240 176 228 172 234 C168 240 163 240 159 252 Z" fill="#2C1C14"/>
+<path d="M173.5 252 Q179 246 184.5 252" stroke="#2A1838" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+<path d="M195.5 252 Q201 246 206.5 252" stroke="#2A1838" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+<ellipse cx="173" cy="262" rx="6" ry="3.5" fill="#C8286A" opacity=".22"/>
+<ellipse cx="207" cy="262" rx="6" ry="3.5" fill="#C8286A" opacity=".22"/>
+<path d="M182 265 Q190 272 198 265" stroke="#2A1838" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+</g>
+<g transform="rotate(-4 372 284)">
+<path d="M397 224 C435 218 431 274 417 296 C411 274 409 248 395 240 Z" fill="#1A1012"/>
+<rect x="362" y="266" width="20" height="40" fill="#7e4c2d"/>
+<path d="M314 440 V336 Q314 302 346 298 H398 Q430 302 430 336 V440 Z" fill="#FFC43D"/>
+<path d="M357 297.5 Q372 317 387 297.5 Z" fill="#7e4c2d"/>
+<ellipse cx="372" cy="244" rx="29" ry="34" fill="#8C5533"/>
+<ellipse cx="344" cy="248" rx="5" ry="8" fill="#824f2f"/>
+<ellipse cx="400" cy="248" rx="5" ry="8" fill="#824f2f"/>
+<path d="M341 248 C339 200 405 200 403 248 C395 230 378 226 368 220 C362 232 347 236 341 248 Z" fill="#1A1012"/>
+<path d="M355.5 246 Q361 240 366.5 246" stroke="#2A1838" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+<path d="M377.5 246 Q383 240 388.5 246" stroke="#2A1838" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+<ellipse cx="355" cy="256" rx="6" ry="3.5" fill="#C8286A" opacity=".22"/>
+<ellipse cx="389" cy="256" rx="6" ry="3.5" fill="#C8286A" opacity=".22"/>
+<path d="M363 258 Q372 272 381 258 Z" fill="#2A1838"/>
+</g>
+<rect x="10" y="400" width="540" height="60" fill="#2A1838"/>
+<rect x="0" y="388" width="560" height="22" rx="4" fill="#E7A84E"/>
+<path d="M144 380 L170 390" stroke="#506fbc" stroke-width="22" stroke-linecap="round"/><ellipse cx="172" cy="392" rx="11" ry="8" fill="#E9B48E"/><path d="M236 380 L210 390" stroke="#506fbc" stroke-width="22" stroke-linecap="round"/><ellipse cx="208" cy="392" rx="11" ry="8" fill="#E9B48E"/>
+<path d="M418 376 L392 386" stroke="#e0ac35" stroke-width="22" stroke-linecap="round"/><ellipse cx="390" cy="388" rx="11" ry="8" fill="#8C5533"/>
+<path d="M270 388 L286 330 H372 L356 388 Z" fill="#CFC6D6" stroke="#2A1838" stroke-width="2.5"/><circle cx="329" cy="358" r="5" fill="#FFFBF5"/><rect x="250" y="384" width="126" height="6" rx="3" fill="#2A1838"/>
+<g transform="rotate(-4 190 386)"><rect x="150" y="374" width="84" height="18" rx="2" fill="#FFFBF5" stroke="#2A1838" stroke-width="2"/></g>
+<g><path d="M110 182 H292 Q306 182 306 196 V216 Q306 230 292 230 H132 L118 246 L120 230 H110 Q96 230 96 216 V196 Q96 182 110 182 Z" fill="#FFFBF5" stroke="#2A1838" stroke-width="2.2"/><text x="201.0" y="214" text-anchor="middle" font-family="Caveat, cursive" font-size="25" font-weight="700" fill="#2A1838">¡Tengo quince años!</text></g>
+</symbol>
+</svg>
+
+<a class="wa-float" href="https://wa.me/6587889205?text=Hi%20Daniela!%20I%27m%20interested%20in%20Spanish%20lessons." onclick="track('float_whatsapp')" target="_blank" rel="noopener" aria-label="Message Daniela on WhatsApp">
+  <svg style="color:#fff"><use href="#i-wa"/></svg>
 </a>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-tag"><span></span> Spanish Tuition for Teens & Professionals · Singapore</div>
-  <h1>Better grades.<br><em>Real fluency.</em><br>One tutor.</h1>
-  <p class="hero-sub">I'm Daniela, a native Spanish speaker from Ecuador. I help teenagers in Singapore ace their Spanish exams, and professionals to master business Spanish — face to face, built around your goals.</p>
-  <div class="hero-cta">
-    <a class="btn-primary" href="https://wa.me/6587889205?text=Hi!%20I%27d%20like%20to%20book%20a%20free%20intro%20session." onclick="fbq('track', 'Contact')" target="_blank">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Book a free intro session
-    </a>
-    <a class="btn-secondary" href="https://instagram.com/SpanishWithDaniela" target="_blank">
-      See my Instagram →
-    </a>
-  </div>
-  <div class="hero-scroll">Scroll to learn more</div>
-</section>
+<main>
 
-<!-- TRUST BAR -->
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <nav class="nav">
+      <a class="logo" href="#">Spanish with <span>Daniela</span></a>
+      <a class="btn btn-line" href="https://wa.me/6587889205?text=Hi%20Daniela!%20I%27m%20interested%20in%20Spanish%20lessons." onclick="track('nav_whatsapp')" target="_blank" rel="noopener" aria-label="Message me on WhatsApp">
+        <svg><use href="#i-wa"/></svg><span>Message me</span>
+      </a>
+    </nav>
+
+    <!-- Default hero: morning group for women -->
+    <div class="hero-grid v-moms">
+      <div class="hero-copy">
+        <h1><span class="line">Kids at school.</span><span class="line">Morning free.</span></h1>
+        <p class="hero-sub">I'm Daniela. I teach Spanish to small groups of expat women in Singapore, weekday mornings.</p>
+        <p class="hero-sub">Native speaker, relaxed vibe, great company.</p>
+        <div class="hero-cta">
+          <a class="btn btn-main" href="https://wa.me/6587889205?text=Hi%20Daniela!%20I%27d%20love%20a%20spot%20in%20the%20morning%20Spanish%20group." onclick="track('group_whatsapp')" target="_blank" rel="noopener">
+            <svg><use href="#i-wa"/></svg>Message me on WhatsApp
+          </a>
+          <a class="btn btn-line" href="https://ig.me/m/SpanishWithDaniela" onclick="track('group_instagram')" target="_blank" rel="noopener">
+            <svg><use href="#i-ig"/></svg>Message on Instagram
+          </a>
+        </div>
+        <p class="spots">Last few spots in the morning group</p>
+        <p class="hero-switch">Looking for help for your teen? <a href="#teens">See IGCSE &amp; IB support</a></p>
+      </div>
+      <div class="hero-art">
+        <svg viewBox="0 0 560 520" role="img" aria-label="Four women laughing over coffee and a Spanish notebook"><use href="#art-group"/></svg>
+      </div>
+    </div>
+
+    <!-- Teen hero: shown with ?for=teens -->
+    <div class="hero-grid v-teens">
+      <div class="hero-copy">
+        <h1><span class="line">Better grades.</span><span class="line">Real fluency.</span></h1>
+        <p class="hero-sub">I'm Daniela, a native Spanish speaker from Ecuador. I help teens in Singapore with IGCSE and IB Spanish, and get them to actually enjoy speaking it.</p>
+        <p class="hero-sub">Face to face, built around their syllabus.</p>
+        <div class="hero-cta">
+          <a class="btn btn-main" href="https://wa.me/6587889205?text=Hi%20Daniela!%20I%27d%20like%20to%20book%20a%20free%20intro%20session%20for%20my%20teen." onclick="track('teens_whatsapp')" target="_blank" rel="noopener">
+            <svg><use href="#i-wa"/></svg>Book a free intro session
+          </a>
+          <a class="btn btn-line" href="https://ig.me/m/SpanishWithDaniela" onclick="track('teens_instagram')" target="_blank" rel="noopener">
+            <svg><use href="#i-ig"/></svg>Message on Instagram
+          </a>
+        </div>
+        <p class="hero-switch">Free on weekday mornings yourself? <a href="#mornings">Join the women's group</a></p>
+      </div>
+      <div class="hero-art">
+        <svg viewBox="0 0 560 460" role="img" aria-label="Two teenagers studying Spanish at a desk"><use href="#art-teens"/></svg>
+      </div>
+    </div>
+  </div>
+</header>
+
 <div class="trust">
-  <div class="trust-item"><span class="icon">🇪🇨</span> Native Ecuadorian Spanish</div>
-  <div class="trust-item"><span class="icon">🎓</span> School Spanish support</div>
-  <div class="trust-item"><span class="icon">📍</span> Face to face in Singapore</div>
-  <div class="trust-item"><span class="icon">✅</span> Spanish with Daniela · MoM Registered</div>
-  <div class="trust-item"><span class="icon">🆓</span> First session free</div>
+  <ul class="wrap">
+    <li>Native Spanish speaker from Ecuador</li>
+    <li>Face to face in Singapore</li>
+    <li>MoM registered</li>
+    <li>First session free</li>
+  </ul>
 </div>
 
-<!-- FOR WHOM -->
-<section class="for-whom">
-  <div class="label">Who this is for</div>
-  <h2 class="reveal">For teens who need results.<br>For adults who mean business.</h2>
-  <div class="cards">
-    <div class="card reveal">
-      <div class="card-num">01</div>
-      <h3>IGCSE & IB Spanish</h3>
-      <p>Structured support aligned to your teen's exact syllabus. From oral exams to written components — a native speaker who knows what examiners are looking for and how to get top marks.</p>
+<!-- MORNING GROUP -->
+<section id="mornings">
+  <div class="wrap">
+    <div class="mornings-head">
+      <h2>What a Spanish morning looks like</h2>
+      <p>A small group for expat women while the kids are at school. No textbooks to wade through, no pressure to be perfect. Just good coffee and a lot of Spanish.</p>
     </div>
-    <div class="card reveal">
-      <div class="card-num">02</div>
-      <h3>Adults — Conversational</h3>
-      <p>Travel, culture, connecting with Spanish-speaking friends or family. No exams, no pressure — just learning to actually speak and be understood.</p>
+    <div class="mornings-art">
+      <svg viewBox="0 0 560 520" role="img" aria-label="Four women laughing over coffee and a Spanish notebook"><use href="#art-group"/></svg>
     </div>
-    <div class="card reveal">
-      <div class="card-num">03</div>
-      <h3>Teens (ages 12–18)</h3>
-      <p>Focused, engaging sessions for teens that build real fluency through conversation and real-world topics — not grammar drills. Perfect for students who want to actually speak, not just pass a test.</p>
+
+    <ol class="day">
+      <li><h3>After drop-off</h3><p>Kids are at school. Come straight from the gate.</p></li>
+      <li><h3>Coffee first</h3><p>We catch up, in Spanish as much as you can and English when you need it.</p></li>
+      <li><h3>Real conversation</h3><p>Ordering at a restaurant, planning a trip, helping with your kids' Spanish homework. Things you'll actually say.</p></li>
+      <li><h3>Home before pick-up</h3><p>You leave with phrases to use this week, and a group you'll look forward to seeing again.</p></li>
+    </ol>
+
+    <dl class="facts">
+      <div><dt>Group size</dt><dd>Up to 4 women</dd></div>
+      <div><dt>When</dt><dd>Weekday mornings</dd></div>
+      <div><dt>Level</dt><dd>Beginners welcome</dd></div>
+      <div><dt>Price</dt><dd>SGD 40 per person, per hour</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- TEENS -->
+<section class="teens" id="teens">
+  <div class="wrap teens-grid">
+    <div class="teens-art">
+      <svg viewBox="0 0 560 460" role="img" aria-label="Two teenagers studying Spanish at a desk"><use href="#art-teens"/></svg>
+    </div>
+    <div>
+      <h2>For your teen: better grades and real fluency</h2>
+      <p class="lead">1-on-1 support aligned to your teen's syllabus, school and upcoming assessments. We work on the exam and on actually speaking, which is exactly what oral examiners reward.</p>
+      <ul class="tags">
+        <li>IGCSE &amp; O-Level</li>
+        <li>IB MYP</li>
+        <li>IB DP</li>
+        <li>Oral exam prep</li>
+        <li>Ages 12 to 18</li>
+      </ul>
+      <blockquote>
+        Daniela has a rare ability to make teenagers actually enjoy Spanish. My daughter's grades improved but more importantly she stopped dreading the subject. Worth every session.
+        <cite>Marko, parent</cite>
+      </blockquote>
+      <a class="btn" href="https://wa.me/6587889205?text=Hi%20Daniela!%20I%27m%20interested%20in%20Spanish%20lessons%20for%20my%20teen." onclick="track('teens_section_whatsapp')" target="_blank" rel="noopener">
+        <svg><use href="#i-wa"/></svg>Ask about lessons for your teen
+      </a>
     </div>
   </div>
 </section>
 
-<!-- WHY ME -->
-<section class="why">
-  <div class="label">Why learn with me</div>
-  <h2 class="reveal">Why teens and adults learn faster<br><em>with a native speaker.</em></h2>
-  <div class="why-grid">
-    <div class="why-item reveal">
-      <h4><span class="dot"></span>Native speaker accuracy</h4>
-      <p>Born in Ecuador, Spanish is my first language. Your teen develops the natural pronunciation, rhythm and expression that examiners reward in oral assessments — and that no non-native tutor can fully replicate.</p>
-    </div>
-    <div class="why-item reveal">
-      <h4><span class="dot"></span>Exam results + real world fluency</h4>
-      <p>For teens: I work on both simultaneously — syllabus skills and genuine fluency. For professionals: 10 years in corporate sales means I teach Spanish that works in real business situations, not just classrooms.</p>
-    </div>
-    <div class="why-item reveal">
-      <h4><span class="dot"></span>Personalised to their school & level</h4>
-      <p>I align every lesson to your teen's exact curriculum, school, and upcoming assessments. Whether it's an oral exam next month or a full IGCSE in six months — we have a plan.</p>
-    </div>
-    <div class="why-item reveal">
-      <h4><span class="dot"></span>One language, two generations ahead</h4>
-      <p>Spanish is the world's second most spoken language. Whether your teen needs exam results or you need to close deals in Spanish — fluency built with a native speaker is an advantage that compounds over time.</p>
+<!-- MEET DANIELA -->
+<section class="meet">
+  <div class="wrap meet-grid" id="meet-grid">
+    <!-- Add a photo named daniela.jpg next to this file. If it's missing, this block hides itself. -->
+    <figure class="photo">
+      <img src="daniela.jpg" alt="Daniela, Spanish teacher" onerror="document.getElementById('meet-grid').classList.add('no-photo'); this.parentNode.remove();">
+    </figure>
+    <div>
+      <h2>Hola, soy Daniela</h2>
+      <p>I was born in Ecuador, Spanish is my first language, and I now live in Singapore. I teach face to face, in small groups and 1-on-1.</p>
+      <p>My classes are relaxed on purpose. People learn more when they're enjoying themselves.</p>
+      <p class="hand">¡Nos vemos pronto!</p>
+      <blockquote>
+        I started with zero Spanish. After two months with Daniela I was having real conversations on my trips to Madrid. She makes it completely natural, no pressure, no boring drills.
+        <cite>Ted</cite>
+      </blockquote>
     </div>
   </div>
 </section>
 
-<!-- WHAT I OFFER -->
-<section class="what">
-  <div class="label">What's on offer</div>
-  <h2 class="reveal">Straightforward<br>pricing.</h2>
-  <div class="offers">
-    <div class="offer-pill reveal">
-      <strong>IGCSE / IB / O-Level prep</strong>
-      <span>1-on-1 · SGD $60/hr</span>
+<!-- PRICES -->
+<section class="prices">
+  <div class="wrap">
+    <div class="prices-grid">
+    <div>
+      <h2>Prices</h2>
+      <p class="prices-note">Not sure which fits? Message me and I'll point you to the right one.</p>
     </div>
-    <div class="offer-pill reveal">
-      <strong>General school support</strong>
-      <span>1-on-1 · SGD $60/hr</span>
+    <div class="menu">
+      <div class="menu-row star">
+        <div class="menu-name">Morning group for women<small>Weekday mornings, up to 4 per group</small></div>
+        <span class="menu-dots"></span>
+        <div class="menu-price">SGD 40<small>per person / hr</small></div>
+      </div>
+      <div class="menu-row">
+        <div class="menu-name">Teens 1-on-1<small>IGCSE, IB, school support</small></div>
+        <span class="menu-dots"></span>
+        <div class="menu-price">SGD 60<small>per hour</small></div>
+      </div>
+      <div class="menu-row">
+        <div class="menu-name">Adults 1-on-1<small>Conversation, travel, everyday Spanish</small></div>
+        <span class="menu-dots"></span>
+        <div class="menu-price">SGD 60<small>per hour</small></div>
+      </div>
+      <div class="menu-row">
+        <div class="menu-name">10-lesson package</div>
+        <span class="menu-dots"></span>
+        <div class="menu-price">10% off</div>
+      </div>
+      <div class="menu-row">
+        <div class="menu-name">Intro session<small>30 minutes, no commitment</small></div>
+        <span class="menu-dots"></span>
+        <div class="menu-price">Free</div>
+      </div>
     </div>
-    <div class="offer-pill reveal">
-      <strong>Business Spanish</strong>
-      <span>1-on-1 · SGD $80/hr</span>
-    </div>
-    <div class="offer-pill reveal">
-      <strong>Small Group (2–4 pax)</strong>
-      <span>SGD $40/head/hr</span>
-    </div>
-    <div class="offer-pill reveal">
-      <strong>10-lesson Package</strong>
-      <span>10% off — book 10, save one</span>
-    </div>
-    <div class="offer-pill reveal">
-      <strong>Free intro session</strong>
-      <span>30 min · no commitment</span>
     </div>
   </div>
-</section>
-
-<!-- TESTIMONIAL -->
-<section class="testi">
-  <div class="label">What students say</div>
-  <blockquote class="reveal">
-    I started with zero Spanish. After two months with Daniela I was having real conversations on my trips to Madrid. She makes it completely natural — no pressure, no boring drills.
-  </blockquote>
-  <p class="quote-attr reveal">— Ted, Regional Director</p>
-
-  <blockquote class="reveal" style="margin-top:60px;">
-    Daniela has a rare ability to make teenagers actually enjoy Spanish. My daughter's grades improved but more importantly she stopped dreading the subject. Worth every session.
-  </blockquote>
-  <p class="quote-attr reveal">— Marko, parent</p>
 </section>
 
 <!-- CTA -->
-<section class="cta-section">
-  <div class="label">Ready to start?</div>
-  <h2 class="reveal">See the difference<br>a native speaker makes.</h2>
-  <p class="reveal">Book a free 30-minute trial lesson. I'll assess exactly where your teen is, what their syllabus requires, and give you a clear plan for improving both their grade and their confidence.</p>
-  <a class="btn-primary reveal" href="https://wa.me/6587889205?text=Hi!%20I%27d%20like%20to%20book%20a%20free%20intro%20session." onclick="fbq('track', 'Contact')" target="_blank" style="display:inline-flex;">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    Message me on WhatsApp
-  </a>
-  <p class="cta-note">Or follow on Instagram <a href="https://instagram.com/SpanishWithDaniela" style="color:#c4736a;">@SpanishWithDaniela</a></p>
+<section class="cta">
+  <div class="wrap">
+    <div class="v-moms">
+      <h2>Grab one of the last spots.</h2>
+      <p>Message me and tell me a little about your Spanish, even if it's zero. I'll reply myself.</p>
+      <div class="hero-cta">
+        <a class="btn btn-main" href="https://wa.me/6587889205?text=Hi%20Daniela!%20I%27d%20love%20a%20spot%20in%20the%20morning%20Spanish%20group." onclick="track('cta_group_whatsapp')" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Message me on WhatsApp</a>
+        <a class="btn btn-line" href="https://ig.me/m/SpanishWithDaniela" onclick="track('cta_instagram')" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg>Message on Instagram</a>
+      </div>
+    </div>
+    <div class="v-teens">
+      <h2>Book a free intro session.</h2>
+      <p>In 30 minutes I'll see where your teen is, what their syllabus needs, and give you a clear plan for their grade and their confidence.</p>
+      <div class="hero-cta">
+        <a class="btn btn-main" href="https://wa.me/6587889205?text=Hi%20Daniela!%20I%27d%20like%20to%20book%20a%20free%20intro%20session%20for%20my%20teen." onclick="track('cta_teens_whatsapp')" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Book on WhatsApp</a>
+        <a class="btn btn-line" href="https://ig.me/m/SpanishWithDaniela" onclick="track('cta_instagram')" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg>Message on Instagram</a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<footer>
-  <span>© 2026 Spanish with Daniela</span>
-  <span>Spanish with Daniela · MoM Registered</span>
-  <a href="https://wa.me/6587889205">+65 8788 9205</a>
-</footer>
+</main>
 
-<script>
-  const reveals = document.querySelectorAll('.reveal');
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach((e, i) => {
-      if (e.isIntersecting) {
-        setTimeout(() => e.target.classList.add('visible'), i * 80);
-        obs.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.12 });
-  reveals.forEach(el => obs.observe(el));
-</script>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Spanish with Daniela</span>
+    <span>MoM registered</span>
+    <a href="https://instagram.com/SpanishWithDaniela" target="_blank" rel="noopener">@SpanishWithDaniela</a>
+    <a href="https://wa.me/6587889205">+65 8788 9205</a>
+  </div>
+</footer>
 </body>
 </html>
